@@ -1,4 +1,4 @@
-# Foobar
+# React App with Multiple Entries and Outputs 
 The project means to serve as a base template for multiple entries and outputs with React framework using Webpack.
 
 ## Installation
