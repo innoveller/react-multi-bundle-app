@@ -28,14 +28,16 @@ module.exports = {
     clean: true // delete the previous items in the dist folder 
   },
   devtool: 'inline-source-map',
-  devServer: {
+  devServer: {    
     static: {
       directory: path.join(__dirname, 'dist'),
     },
-    port: 4200, // port to a meaningful life multiplied by 100
+    port: 4200, // you can change to any port
     proxy: {
       '/api': 'http://localhost:9000'          
-    }
+    },
+    // Enable hot reloading
+    hot: true
   },
   module: {
     rules:[
