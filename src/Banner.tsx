@@ -1,13 +1,13 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom';
-import './Widget.css';
+import './Banner.css';
 
-function Widget(props:any) {
+function Banner(props:any) {
   return (
-    <div className="widget">
+    <div className="banner">
       <h1>{props.title}</h1>
     </div>
   );
 }
 
-export default Widget;
+export default Banner;

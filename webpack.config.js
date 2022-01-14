@@ -3,8 +3,8 @@ const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
 let entryMap = {
-  app_one: "./src/app_one.tsx",
-  app_two: "./src/app_two.tsx"
+  app_banner: "./src/app_banner.tsx",
+  app_proxy: "./src/app_proxy.tsx"
 };
 
 /** Create separate html files that contains a correspoding js bundle */
@@ -33,6 +33,9 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     port: 4200, // port to a meaningful life multiplied by 100
+    proxy: {
+      '/api': 'http://localhost:9000'          
+    }
   },
   module: {
     rules:[
