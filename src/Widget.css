@@ -1,0 +1,10 @@
+.widget {
+    padding: 24px;
+    margin: 8px;
+    border: 2px dashed purple;
+    text-align: center;
+}
+
+h1 {
+    color: purple;
+}
