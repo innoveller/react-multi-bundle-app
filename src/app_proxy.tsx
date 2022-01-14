@@ -7,6 +7,7 @@ function ProxyApp() {
 
   let onButtonClick = () => {
     console.log("Fetching data via proxy...");
+    // proxy is configured in webpack.config.js devServer.proxy
     fetch("api/v1/quotes").then(res => res.json()).then(data => {
       console.log("Got data ", data);
       setQuotes(data);
